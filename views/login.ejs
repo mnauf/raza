@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+  <h1>User Login</h1>
+  <div id="login_div">
+    <input type="email" name="email" id="email_field" placeholder="Email">
+    <input type="password" name="password" id="password_field" placeholder="Password">
+    <button onclick='login()'>Login</button><br>
+  </div>
+    
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBs_CpMtgUh-7bR1isc0kYlB3GmFzTrgn8",
+    authDomain: "ali-raza-462f7.firebaseapp.com",
+    databaseURL: "https://ali-raza-462f7.firebaseio.com",
+    projectId: "ali-raza-462f7",
+    storageBucket: "ali-raza-462f7.appspot.com",
+    messagingSenderId: "135393351700"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="login.js"></script>
+</body>
+</html>
